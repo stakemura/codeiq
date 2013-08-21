@@ -4,7 +4,7 @@ CodeIQ
 
 ## Question
 
-### Combinational optimization
+### Combinational Optimization
 
 #### [Q408: Word chain having maximum length](https://codeiq.jp/ace/stakemura/q408)
 
@@ -14,3 +14,15 @@ CodeIQ
 * This program can find <=33 word chain within about 1 sec.
 * However as of 34, the computation time reach >100000 sec.
 * Finally as of 35, you will see the combinational explosion ...
+
+### Computational Geometry
+
+### Association Analysis
+
+### Computer Security
+
+### C/C++
+
+### .NET
+
+### VBA

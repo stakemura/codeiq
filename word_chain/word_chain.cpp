@@ -1,5 +1,5 @@
 /*!
-@brief CodeIQ ( https://codeiq.jp/ace/stakemura/q408 ) Answer Code
+@brief CodeIQ 'Word chain' problem ( https://codeiq.jp/ace/stakemura/q408 )
 @author Shintaro TAKEMURA (stakemura@gmail.com)
 
 This code is public domain, no warranty expressed or implied,
@@ -89,17 +89,13 @@ const vector<string> words = {
 };
 
 // index list of previous words
-vector<vector<size_t> >word_edges;
+vector<vector<size_t>> word_edges;
 
 auto begin_time = high_resolution_clock::now();
 
 void dfs(vector<size_t> &chain_max, vector<size_t> &chain, vector<int> &visit, size_t cur){
-	vector<size_t> &prevs = word_edges[cur];
-	for (auto &prev : prevs){
+	for (auto &prev : word_edges[cur]){
 		if (!visit[prev]){
-			auto li = std::find(chain_max.begin(), chain_max.end(), prev);
-			if (li != chain_max.end() && visit[cur] < chain_max.end() - li) continue;
-
 			chain.push_back(prev);
 			visit[prev] = visit[cur] + 1;
 			dfs(chain_max, chain, visit, prev);
@@ -139,13 +135,13 @@ int main(int argc, char *argv []){
 	vector<int> visit;
 	visit.assign(words.size(), 0);
 
-	//size_t i = 73/*try*/;{
-	size_t i = 68/*typename*/;{
-	//for (size_t i = 0; i < words.size(); i++){
-		chain.push_back(i);
-		visit[i] = 1;
-		dfs(chain_max, chain, visit, i);
-		visit[i] = 0;
+	//size_t last = 73/*try*/;{
+	//size_t last = 68/*typename*/;{
+	for (size_t last = 0; last < words.size(); last++){
+		chain.push_back(last);
+		visit[last] = 1;
+		dfs(chain_max, chain, visit, last);
+		visit[last] = 0;
 		chain.pop_back();
 	}
 }
