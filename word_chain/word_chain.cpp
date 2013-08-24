@@ -94,14 +94,14 @@ vector<vector<size_t>> word_edges;
 auto begin_time = high_resolution_clock::now();
 
 void dfs(vector<size_t> &chain_max, vector<size_t> &chain, vector<int> &visit, size_t cur){
-	for (auto &prev : word_edges[cur]){
-		if (!visit[prev]){
-			chain.push_back(prev);
-			visit[prev] = visit[cur] + 1;
-			dfs(chain_max, chain, visit, prev);
-			visit[prev] = 0;
-			chain.pop_back();
-		}
+	for (auto &next : word_edges[cur]){
+		if (visit[next]>=1) continue;
+
+		chain.push_back(next);
+		visit[next] += 1;
+		dfs(chain_max, chain, visit, next);
+		visit[next] -= 1;
+		chain.pop_back();
 	}
 	if (chain.size() > chain_max.size()){
 		auto end_time = high_resolution_clock::now();
@@ -109,8 +109,8 @@ void dfs(vector<size_t> &chain_max, vector<size_t> &chain, vector<int> &visit, s
 		std::cout << "--- " << chain.size() << " words (" << duration.count()/1000000.0 << " sec.) ---" << std::endl;
 
 		chain_max = chain;
-		for (auto ri = chain_max.rbegin(); ri != chain_max.rend(); ++ri)
-			std::cout << words[*ri] << std::endl;
+		for (auto &ri : chain_max)
+			std::cout << words[ri] << std::endl;
 	}
 	//if (chain_max.size() >= 35) return;
 }
@@ -119,7 +119,8 @@ int main(int argc, char *argv []){
 	word_edges.resize(words.size());
 	for (size_t i = 0; i < words.size(); i++){
 		for (size_t j = 0; j < words.size(); j++){
-			if (words[i].back() == words[j].front()){
+			if (i == j) continue;
+			if (words[i].front() == words[j].back()){
 				word_edges[j].push_back(i);
 			}
 		}
@@ -135,13 +136,11 @@ int main(int argc, char *argv []){
 	vector<int> visit;
 	visit.assign(words.size(), 0);
 
-	//size_t last = 73/*try*/;{
-	//size_t last = 68/*typename*/;{
-	for (size_t last = 0; last < words.size(); last++){
-		chain.push_back(last);
-		visit[last] = 1;
-		dfs(chain_max, chain, visit, last);
-		visit[last] = 0;
+	for (size_t head = 0; head < words.size(); head++){
+		chain.push_back(head);
+		visit[head] = 1;
+		dfs(chain_max, chain, visit, head);
+		visit[head] = 0;
 		chain.pop_back();
 	}
 }
