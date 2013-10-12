@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?><graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key attr.name="label" attr.type="string" for="edge" id="d2" />
+  <key attr.name="weight" attr.type="int" for="edge" id="d1" />
+  <key attr.name="weight" attr.type="int" for="node" id="d0" />
+  <graph edgedefault="directed">
+    <node id="tramic">
+      <data key="d0">6</data>
+    </node>
+    <node id="csilic">
+      <data key="d0">6</data>
+    </node>
+    <node id="canoco">
+      <data key="d0">6</data>
+    </node>
+    <node id="oultra">
+      <data key="d0">6</data>
+    </node>
+    <node id="oniosis">
+      <data key="d0">7</data>
+    </node>
+    <node id="icrosco">
+      <data key="d0">7</data>
+    </node>
+    <node id="pneumo">
+      <data key="d0">6</data>
+    </node>
+    <node id="oconio">
+      <data key="d0">6</data>
+    </node>
+    <node id="onoult">
+      <data key="d0">6</data>
+    </node>
+    <node id="ovolcano">
+      <data key="d0">8</data>
+    </node>
+    <node id="ilicov">
+      <data key="d0">6</data>
+    </node>
+    <node id="copics">
+      <data key="d0">6</data>
+    </node>
+    <edge source="tramic" target="icrosco">
+      <data key="d1">2</data>
+      <data key="d2">ic</data>
+    </edge>
+    <edge source="tramic" target="csilic">
+      <data key="d1">1</data>
+      <data key="d2">c</data>
+    </edge>
+    <edge source="tramic" target="canoco">
+      <data key="d1">1</data>
+      <data key="d2">c</data>
+    </edge>
+    <edge source="tramic" target="copics">
+      <data key="d1">1</data>
+      <data key="d2">c</data>
+    </edge>
+    <edge source="csilic" target="icrosco">
+      <data key="d1">2</data>
+      <data key="d2">ic</data>
+    </edge>
+    <edge source="csilic" target="canoco">
+      <data key="d1">1</data>
+      <data key="d2">c</data>
+    </edge>
+    <edge source="csilic" target="ilicov">
+      <data key="d1">4</data>
+      <data key="d2">ilic</data>
+    </edge>
+    <edge source="csilic" target="copics">
+      <data key="d1">1</data>
+      <data key="d2">c</data>
+    </edge>
+    <edge source="canoco" target="oultra">
+      <data key="d1">1</data>
+      <data key="d2">o</data>
+    </edge>
+    <edge source="canoco" target="oniosis">
+      <data key="d1">1</data>
+      <data key="d2">o</data>
+    </edge>
+    <edge source="canoco" target="oconio">
+      <data key="d1">3</data>
+      <data key="d2">oco</data>
+    </edge>
+    <edge source="canoco" target="onoult">
+      <data key="d1">1</data>
+      <data key="d2">o</data>
+    </edge>
+    <edge source="canoco" target="ovolcano">
+      <data key="d1">1</data>
+      <data key="d2">o</data>
+    </edge>
+    <edge source="canoco" target="copics">
+      <data key="d1">2</data>
+      <data key="d2">co</data>
+    </edge>
+    <edge source="oultra" target="tramic">
+      <data key="d1">3</data>
+      <data key="d2">tra</data>
+    </edge>
+    <edge source="icrosco" target="oultra">
+      <data key="d1">1</data>
+      <data key="d2">o</data>
+    </edge>
+    <edge source="icrosco" target="oniosis">
+      <data key="d1">1</data>
+      <data key="d2">o</data>
+    </edge>
+    <edge source="icrosco" target="oconio">
+      <data key="d1">1</data>
+      <data key="d2">o</data>
+    </edge>
+    <edge source="icrosco" target="onoult">
+      <data key="d1">1</data>
+      <data key="d2">o</data>
+    </edge>
+    <edge source="icrosco" target="ovolcano">
+      <data key="d1">1</data>
+      <data key="d2">o</data>
+    </edge>
+    <edge source="icrosco" target="copics">
+      <data key="d1">2</data>
+      <data key="d2">co</data>
+    </edge>
+    <edge source="pneumo" target="onoult">
+      <data key="d1">1</data>
+      <data key="d2">o</data>
+    </edge>
+    <edge source="pneumo" target="oconio">
+      <data key="d1">1</data>
+      <data key="d2">o</data>
+    </edge>
+    <edge source="pneumo" target="oniosis">
+      <data key="d1">1</data>
+      <data key="d2">o</data>
+    </edge>
+    <edge source="pneumo" target="ovolcano">
+      <data key="d1">1</data>
+      <data key="d2">o</data>
+    </edge>
+    <edge source="pneumo" target="oultra">
+      <data key="d1">1</data>
+      <data key="d2">o</data>
+    </edge>
+    <edge source="oconio" target="onoult">
+      <data key="d1">1</data>
+      <data key="d2">o</data>
+    </edge>
+    <edge source="oconio" target="ovolcano">
+      <data key="d1">1</data>
+      <data key="d2">o</data>
+    </edge>
+    <edge source="oconio" target="oniosis">
+      <data key="d1">4</data>
+      <data key="d2">onio</data>
+    </edge>
+    <edge source="oconio" target="oultra">
+      <data key="d1">1</data>
+      <data key="d2">o</data>
+    </edge>
+    <edge source="onoult" target="oultra">
+      <data key="d1">4</data>
+      <data key="d2">oult</data>
+    </edge>
+    <edge source="onoult" target="tramic">
+      <data key="d1">1</data>
+      <data key="d2">t</data>
+    </edge>
+    <edge source="ovolcano" target="onoult">
+      <data key="d1">1</data>
+      <data key="d2">o</data>
+    </edge>
+    <edge source="ovolcano" target="oconio">
+      <data key="d1">1</data>
+      <data key="d2">o</data>
+    </edge>
+    <edge source="ovolcano" target="canoco">
+      <data key="d1">4</data>
+      <data key="d2">cano</data>
+    </edge>
+    <edge source="ovolcano" target="oniosis">
+      <data key="d1">1</data>
+      <data key="d2">o</data>
+    </edge>
+    <edge source="ovolcano" target="oultra">
+      <data key="d1">1</data>
+      <data key="d2">o</data>
+    </edge>
+    <edge source="ilicov" target="ovolcano">
+      <data key="d1">2</data>
+      <data key="d2">ov</data>
+    </edge>
+    <edge source="copics" target="csilic">
+      <data key="d1">2</data>
+      <data key="d2">cs</data>
+    </edge>
+  </graph>
+</graphml>
