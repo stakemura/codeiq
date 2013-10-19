@@ -1,5 +1,5 @@
 /*!
-@brief CodeIQ 'Word chain' problem ( https://codeiq.jp/ace/stakemura/q408 )
+@brief CodeIQ 'Longest word chain' ( https://codeiq.jp/ace/stakemura/q408 )
 @author Shintaro TAKEMURA (stakemura@gmail.com)
 
 This code is public domain, no warranty expressed or implied,

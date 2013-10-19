@@ -6,6 +6,22 @@
 
 ### Monte-Carlo Simulation
 
+#### [Q514: Random sampling of normal distribution](https://codeiq.jp/ace/stakemura/q514)
+
+* Code 1 : [plot_normdist_pdf.py](monte_carlo_simulation/plot_normdist_pdf.py)
+  * Implemented in Python 2.7
+    * Depends on scipy.stats and matplotlib
+  * This program is now a supplemental code not the answer code.
+  * Plot the pdf of two distributions (See command line option).
+
+#### [Q486: Random sampling of triangular distribution](https://codeiq.jp/ace/stakemura/q486)
+
+* Code 1 : [plot_tridist_pdf.py](monte_carlo_simulation/plot_tridist_pdf.py)
+  * Implemented in Python 2.7
+    * Depends on scipy.stats and matplotlib
+  * This program is now a supplemental code not the answer code.
+  * Plot the pdf of the distributions (See command line option).
+
 ### Combinational Optimization
 
 #### [Q450: Shortest common superstring](https://codeiq.jp/ace/stakemura/q450)
@@ -14,7 +30,7 @@
   * Implemented in Python 2.7
     * Depends on NetworkX and matplotlib
   * This program is now a supplemental code not the answer code.
-  * Visualize the substring network or generate its file (See command line option).
+  * Visualize the network diagram of the substrings (See command line option).
 
 #### [Q408: Longest word chain](https://codeiq.jp/ace/stakemura/q408)
 

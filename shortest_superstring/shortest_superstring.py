@@ -1,7 +1,7 @@
 ﻿# -*- coding:utf-8 -*-
 
 """
-@brief CodeIQ 'Shortest common superstring' problem ( https://codeiq.jp/ace/stakemura/q450 )
+@brief CodeIQ 'Shortest common superstring' ( https://codeiq.jp/ace/stakemura/q450 )
 @author Shintaro TAKEMURA (stakemura@gmail.com)
 
 This code is public domain, no warranty expressed or implied,
@@ -15,7 +15,9 @@ import networkx as nx
 
 def calc_distance(s1, s2):
     """
-    @rtype : int
+    @type s1: str or unicode 
+    @type s2: str or unicode
+    @rtype: int
     """
     length = len(s1)
     for i in range(length):
@@ -26,7 +28,8 @@ def calc_distance(s1, s2):
 
 def generate_network(parts):
     """
-    @rtype : nx.DiGraph
+    @type parts: list
+    @rtype: nx.DiGraph
     """
     G = nx.DiGraph()
 
